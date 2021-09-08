@@ -114,6 +114,13 @@
           "options": {
             "browserTarget": "project-mabelline:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://christopher-harris.github.io/fluffy-broccoli/",
+            "name": "Fluffy Broccoli"
+          }
         }
       }
     }
