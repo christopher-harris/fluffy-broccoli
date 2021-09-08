@@ -1,0 +1,7 @@
+<div class="container-fluid text-start" *ngIf="(patientInfo$ | async)">
+<!--    <h5>{{(patientInfo$ | async)?.name.first}} {{(patientInfo$ | async)?.name.last}}</h5>-->
+<!--    <p>{{(patientInfo$ | async)?.dob.date | date}}</p>-->
+
+    <pre>{{(patientInfo$ | async) | json}}</pre>
+</div>
+

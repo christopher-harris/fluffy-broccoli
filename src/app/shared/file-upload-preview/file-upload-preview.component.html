@@ -1,0 +1,13 @@
+<ng-container *ngIf="!imageUrl">
+    <div class="file-preview ratio ratio-16x9 bg-light bg-gradient border-3 border-secondary rounded-3 border-dashed">
+        <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+            <p class="text-muted">Click below to select an image</p>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="imageUrl">
+    <div class="file-preview border-1">
+        <img [src]="imageUrl" class="w-auto mh-100 rounded img-fluid ratio ratio-16x9" alt="..." />
+    </div>
+</ng-container>
